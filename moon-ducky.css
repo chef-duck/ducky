@@ -614,6 +614,14 @@ pre b {
     font-size: 1.2em;
 }
 
+.text-center img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease; 
+}
+
+.text-center img:hover {
+  filter: grayscale(0%);
+}
 
 /* ---------- ADDITIONAL AREA ----------*/
 h3 {
