@@ -2,7 +2,6 @@
 @import url("https://use.typekit.net/pqh0pta.css"); /* Lucida Console */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap'); /* Nanum Brush Script */
 @import url("https://use.typekit.net/pqh0pta.css"); /* Lucida Sans */
-
 /* ---------- IMPORTANT ---------- */
 #footer {
     background: none;
@@ -473,8 +472,17 @@ td.b {
     border: 0;
     border-bottom: 0px solid #eee3;
     color: inherit;
+    position: absolute;
+    right: -1%;
+    margin-top: -55px;
+}
+
+.alert.alert-danger.text-center {
     margin-top: -90px;
-    margin-bottom: 70px;
+}
+
+.alert.alert-danger.text-center a {
+    padding-left: 10px;
 }
 
 .text-danger {
