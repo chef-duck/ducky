@@ -9,7 +9,7 @@ h1 {font-size: 50px;text-align: center;font-family: 'Iceberg', cursive;
 	font-family: 'Questrial';
 }
 
-.breadcrumb::after /* æŽˆæƒ*/ 
+.breadcrumb::after 
 {
     content:'CSS by #3609';
     position:absolute;
