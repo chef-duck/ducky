@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+h1 {font-size: 50px;text-align: center;font-family: 'Iceberg', cursive;
+	color: rgba(215, 65, 15, 1);
+	}
+
+* {
+	font-family: 'Questrial';
+}
+
+.breadcrumb::after /* æŽˆæƒ*/ 
+{
+    content:'CSS by #3609';
+    position:absolute;
+    right:35px;
+    font-weight: bold;
+    color: rgba(245, 110, 45, 1);
+}
+
+body, .table th, .nav-tabs .nav-link.active {
+    background: url("https://img.goodfon.com/original/1920x1080/1/fa/black-hole-art-galaxy-eclipse-nebula.jpg") 
+                center top fixed no-repeat;
+    background-size: cover;
+    font-family: Iceberg;
+    color: rgba(255, 165, 65, 1);
+}
+
+/* Home å·¦ä¾§ä¹¦ç­¾ç­‰é“¾æŽ¥é¢œè‰²*/ 
+a {
+	color: rgba(245, 110, 45, 1);
+	font-weight: bold;
+}
+
+a:hover {
+	color: rgba(240, 150, 70, 1);
+}
+
+/* å¯¼èˆªåº•è‰² DEN CROSSROAD */
+#header .navbar-main, #footer {
+	background-color: rgba(10, 20, 30, 1);
+}
+
+/* å¯¼èˆªé“¾æŽ¥é¢œè‰² DEN CROSSROAD */
+#header .navbar-main .nav-link, #header .navbar-main .nav-link .fa {
+	color: rgba(215, 65, 15, 1);
+}
+
+#header .navbar-main .nav-link:hover, #header .navbar-main .nav-link:hover .fa, #footer a:hover, #footer nav .nav-item .nav-link:hover {
+	color: rgba(160, 30, 7, 1);
+}
+
+
+/* Welcome back */
+.navbar-status 
+{
+    background-color: rgba(10, 20, 30, 0.6) !important;
+    border-radius: 0px 0px 0px 0px;
+    color: rgba(215, 65, 15, 1) !important;
+} .navbar-status a {
+    color: rgba(255, 145, 65, 1) !important;
+} .btn-group-vertical>.btn, .btn-group>.btn /* Username in that bar */ {
+    color: rgba(255, 145, 65, 1) !important;
+}
+
+/* CURSOR */
+
+* {
+    cursor: url(https://images2.imgbox.com/72/87/rZA4RyNn_o.png), auto !important;
+}
+
+/* home, username, pack */
+#header .breadcrumb-nav {
+	background-color: rgba(90, 30, 20, 0.7);
+}
+
+.breadcrumb-item.active {
+	color: rgba(30, 20, 20, 1);
+}
+
+
+/* ä¸»æ¿ */
+#main {
+	background-color: rgba(15, 30, 35, 0.6);
+	border: double;
+	border-width: 8px;
+	border-color: rgba(240, 100, 40, 0.5);
+}
+
+
+/* DEN/PROFILE æŒ‰é”® */
+.nav-tabs /* Section containing the Den and Profile buttons */ {
+    justify-content: center;
+    border:none;
+    margin-top: -5px;
+    font-family: Questrial;
+}
+.nav-tabs .nav-link /* Individual Den and Profile buttons */ {
+    background: rgba(115, 35, 15, 1);
+    color: rgba(255, 165, 65, 1);
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+    font-family: Questrial;
+}
+.nav-tabs .nav-link:hover /* Hover of inactive button */ {
+    background: rgba(230, 80, 30, 0.8);
+    color: rgba(255, 165, 65, 1);
+    transition:.5s ease;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+    font-family: Questrial;
+}
+.nav-tabs .nav-link.active /* Link of the page being viewed */ {
+    background-color: rgba(115, 35, 15, 1);
+    color: rgba(255, 165, 65, 1);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px 5px 5px 5px;
+    font-family: Questrial;
+}
+
+/* pack dynasty,feed all play all,Expand Territory */
+#main .card {
+	background: rgba(100, 30, 10, 0.8);
+	border-radius: 0px;
+}
+
+.card-header {
+	border: none;
+}
+
+/* å±•ç¤ºç‹¼å’Œç‹¼ç¾¤ç‹¼å¤´åƒå›¾ç‰‡ */
+img, .form-control, .note-btn {
+	border-radius: 0px;
+}
+
+/* å±•ç¤ºç‹¼å¤´åƒ */
+
+.featured-wolf img 
+{
+    border-radius: 100px;
+    border: none;
+    border: 2px solid rgba(130, 30, 0, 1);
+}
+
+/* ä¸»ç‹¼å¤´åƒå›¾ç‰‡ */
+.card-img-top, .pt-1.pb-1, .table .top, .note-editor.note-frame .note-editing-area .note-editable {
+	border-radius: 0px 0px 0px 0px;
+}
+/* ä¸»ç‹¼å¤´åƒå›¾ç‰‡ */
+.table .row .card a img{
+    border-radius: 100px;
+    border: 2px solid rgba(100, 30, 10, 1); 
+}
+
+.border-none .card-img-top, .table .form-row img 
+{
+    border-radius: 100px;
+}
+
+/* ä¸»ç‹¼å¤´åƒèƒŒæ™¯ */ 
+.border-none .card 
+{
+    background-color:transparent !important;
+}
+
+/* ç¬¬äºŒå¤§ä¸»æ¿ */
+.table {
+	background-color: rgba(10, 20, 30, 0.8);
+	box-shadow:3px 3px 4px 4px rgba(255 ,135 ,85 ,0.4);
+	border: none;
+	border-color: rgba(240, 100, 40, 1);
+	border-radius: 0px;
+}
+
+/* Leader,Caveæ ‡é¢˜åº•è‰² */
+.table th {
+	background-color: rgba(240, 100, 40, 0);
+  font-size: 20px !important;
+}
+
+/* Leader,Caveé“¾æŽ¥é¢œè‰² */
+.table th a {
+	color: rgba(255, 155, 50, 1);
+}
+
+.table th a:hover {
+	color: rgba(255, 195, 50, 1);
+}
+
+/* æ¬¡çº§æ ‡é¢˜é¢œè‰²ï¼Œå¬å›žç‹¼ */
+.table .subheader {
+	background-color: rgba(100, 30, 10, 0.8);
+}
+
+/* ï¼Ÿ */
+.table .left {
+	background-color: rgba(100, 30, 10, 0.8);
+}
+
+/* Feed/Play æŒ‰é’® */ 
+.btn-info 
+{
+    background: rgb(170, 40, 10, 0.8);
+    color: #f7c492 !important;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}.btn-info:hover {
+    background: rgb(170, 40, 10, 0.8);
+    color: #f79e62 !important;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+
+/* åŒè‰²æ¡ */
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: rgba(100, 30, 10, 0.5);
+}
+
+/* caveä¸‹æ–¹é€‰æ‹©åº•è‰²ç­‰ */
+.table td.bottom {
+	background-color: rgba(100, 30, 10, 0.8);
+}
+
+/* card veiwå¡ç‰‡åº•è‰² */
+.bg-light {
+background-color: rgba(100, 30, 15,0.4)!important;
+  border: 2px solid rgba(100, 30, 10, 1);
+	border-radius: 0px 0px 15px 15px;
+}
+
+.text-light /* å¡ç‰‡æ ‡é¢˜ */ {
+    background-color: rgba(100, 30, 10, 1) !important;
+    color: #f79e62 !important;
+    border-bottom: none;
+}
+
+/* è¾¹åŒºå¤§åº•è‰² */
+#sidebar {
+	background-color: rgba(15, 30, 35, 0.6);
+	border: double;
+	border-width: 8px;
+	border-color: rgba(240, 100, 40, 0.5);
+}
+
+#sidebar .multi-column {
+	padding-top: 15px;
+}
+
+/* è¾¹åŒºå¡ç‰‡åº•è‰² */
+#sidebar .card {
+	background-color: rgba(15, 20, 30, 0.8);
+	box-shadow:3px 3px 4px 4px rgba(255 ,135 ,85 ,0.4);
+	border: none;
+	border-color: rgba(240, 100, 40, 1);
+	border-radius: 0px;
+}
+
+.card-body .w-50:first-child div /* Border featured wolf in Sidebar */ {
+border: none !important;
+}
+
+.w-50 > a img /* Wolf Icon Sidebar */ {
+    transition:.5s ease;
+    border-radius: 100px;
+    border: 2px solid rgba(100, 30, 10, 1);
+}
+.w-50 div a img /* Featured Wolf Icon Sidebar */ {
+    border-radius: 50px;
+    border: 2px solid rgba(100, 30, 10, 1);
+}
+
+
+/* çŠ¶æ€åº•è‰² */
+.progress {
+	background: rgba(30,10,10,0.8) !important;
+}
+
+/* èƒ½é‡ */
+.bg-warning, #main .bg-success  {
+	background-color: rgba(250, 180, 80, 1) !important;
+}
+
+
+#sidebar .bg-danger, .bg-primary {
+	background-color: rgba(250, 150, 40, 1) !important;
+}
+
+
+#sidebar .bg-info, #main .bg-danger {
+	background-color: rgba(230, 80, 20, 1) !important;
+}
+
+
+#sidebar .bg-success, #main .bg-info {
+	background-color: rgba(170, 45, 10, 1) !important;
+}
+
+#chatMessagePinned.s-chat-message__pinned {
+	background-color: rgba(230, 100, 30, 0.8);
+	color:rgba(250, 220, 110, 1);
+	padding: 5px;
+	border:none;
+}
+
+/* èŠå¤©æ */
+.s-chat-sidebar #chatMessageList ,.s-chat-sidebar #chatMessageContainer {
+	height: 370px;
+	border-color:rgba(100, 30, 10, 1);
+}
+
+.s-chat-message:nth-child(odd) {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.s-chat-message:nth-child(even) {
+	background: rgba(255, 180, 122, 0.1);
+}
+
+.s-chat-sidebar #label_currentChannel {
+  background: rgba(15, 20, 30, 0.8); 
+  color:rgba(250, 220, 110, 1);
+  border-color:rgba(100, 30, 10, 1);
+}
+
+#fra_chatContainer #txtChatInput {
+  background: rgba(15, 20, 30, 0.8); 
+  color:rgba(250, 220, 110, 1);
+  border:1px solid rgba(100, 30, 10, 1);
+}
+
+ input#btnChatSend.btn.btn-primary.btn-sm:hover{border-color: black !important;}
+/*0/150*/ 
+#txtChatContainer #lblCharacterCounter { color: rgba(255, 165, 65, 1)
+/* Code of Conduct*/
+} #txtChatContainer a { color: rgba(255, 165, 65, 1)}
+
+
+/* Update æŒ‰é’®*/
+.btn-primary, .btn-success {
+	background-color: rgba(250, 110, 35, 0.6);
+	border: none;
+	font-weight: bold;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-success:hover, .btn-success:focus {
+	background-color: rgba(184, 141, 131, 0.6) !important;
+	box-shadow: none !important;
+}
+
+/* ä¸æœ½æ§½æŒ‰é’®*/
+.btn-warning {
+	background-color: rgba(250, 110, 35, 0.6);
+	border: none;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+	background-color: rgba(184, 141, 131, 0.6) !important;
+	box-shadow: none !important;
+}
+
+/* -cssæŒ‰é’®*/
+.btn-danger {
+	background-color: rgba(250, 110, 35, 0.6);
+	border: none;
+}
+
+.btn-danger:hover {
+	background-color: rgba(184, 141, 131, 0.6) !important;
+	box-shadow: none !important;
+}
+
+
+/* userlogä¸‹æ‹‰å¤„*/
+.dropdown-menu.show /* Dropdown menu for 'Profile, User Log, Log Out, etc.' */ {
+    background-color: rgba(15, 30, 35, 1);
+}.dropdown-item:hover {
+    background-color: rgba(175, 40, 0, 0.7);
+}
+.dropdown-divider {
+    border: none;
+}
+
+/* æç¤º */
+.alert-info, .alert-success,.alert-danger {
+	background-color: rgba(180, 50, 15, 1);
+	color: rgba(255, 165, 65, 1);
+	border: none;
+	border-radius: 0px;
+}
+
+/* åº•éƒ¨ä¿®æ”¹ */
+
+.h2, h2 /* 'Text for Den Options' */ {
+  font-family: Iceberg;
+}
+
+select.form-control /* Pack Leader + Wolf Title selectrion */ {
+    background-color: rgba(10, 20, 30, 1) !important;
+    border: none;
+    color: rgba(255, 165, 65, 1);
+}
+
+/* Bold, Italics, etc. BUTTONS */ button.note-btn.btn.btn-light.btn-sm {
+    background-color: rgba(10, 20, 30, 1) !important;
+    color: rgba(255, 165, 65, 1) !important;
+    border: none;
+}a.dropdown-item {
+    color: rgba(255, 165, 65, 1) !important;
+}
+
+/* Drag Bar below Text Field in Editor */ .note-editor.note-airframe .note-statusbar .note-resizebar, .note-editor.note-frame .note-statusbar .note-resizebar {
+    background: rgba(10, 20, 30, 1) !important;
+    border: none !Important;
+}
+
+/* åšçªç­‰å›¾ç‰‡ä¸‹æ–¹æ¡ */
+#denCards .card-header {
+  color:rgba(255, 165, 65, 1) !important;
+}
+
+/* æ·»åŠ cssæ¡ */ 
+.form-control  {
+    color: rgba(255, 165, 65, 1) !important;
+    background-color: rgba(15, 20, 30, 0.8) !important;
+    border:solid 1px rgba(100, 30, 10, 1);
+}
+select.form-control:hover{
+    border:solid 1px rgba(100, 30, 10, 1);
+}
+
+/* editoræŒ‰é’®é¢œè‰² */ 
+.btn.btn-htmlinput {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* editoræŒ‰é’®èƒŒåŽæ•´ä¸ªæ¡é¢œè‰² */ 
+.bg-bar-input {
+  background: rgba(100, 30, 10, 0.8);
+}
+
+.text-td-bottom {
+  color: rgba(255, 165, 65, 1);
+}
+
+/* æ»šåŠ¨æ¡ */
+::-webkit-scrollbar {
+  background:rgba(0, 0, 0, 1);
+	width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(165, 93, 42, 1);
+  border-radius: 8px;
+}
+
+
+/* Boxes */
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	display: flex;
+	justify-content: center
+}
+
+/*H Box1 Large*/
+.Box1 {
+	float: left;
+	background-color: rgba(15, 20, 30, 0.8);
+	box-shadow:3px 3px 4px 4px rgba(255 ,135 ,85 ,0.4);
+	color: rgba(245, 110, 45, 1);
+	padding: 0px;
+	border: none !important;
+	border-radius: 0px;
+	margin: 5px;
+	height: 55px;
+	width: 92%;
+	overflow: hidden;
+	transition: height 1s;
+	padding: 15px;
+	text-align: center;
+}
+.Box1:hover {
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 180px;
+}
+
+/*H Box2 Medium*/
+.Box2 {
+	float: left;
+	background-color: rgba(15, 20, 30, 0.8);
+	box-shadow:3px 3px 4px 4px rgba(255 ,135 ,85 ,0.4);
+	color: rgba(245, 110, 45, 1);
+	padding: 0px;
+	border: none !important;
+	border-radius: 0px;
+	margin: 5px;
+	height: 55px;
+	width: 42%;
+	overflow: hidden;
+	transition: height 1s;
+	padding: 15px;
+	text-align: center;
+}
+.Box2:hover {
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 180px;
+}
+
+/*H Box3 Small */
+.Box3 {
+	float: left;
+	background-color: rgba(15, 20, 30, 0.8);
+	box-shadow:3px 3px 4px 4px rgba(255 ,135 ,85 ,0.4);
+	color: rgba(245, 110, 45, 1);
+	padding: 0px;
+	border: none !important;
+	border-radius: 0px;
+	margin: 5px;
+	height: 55px;
+	width: 24%;
+	overflow: hidden;
+	transition: height 1s;
+	padding: 15px;
+	text-align: center;
+}
+.Box3:hover {
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 180px;
+}
+
+/*S Box4 Small */
+.Box4 {
+	float: left;
+	background-color: rgba(15, 20, 30, 0.8);
+	box-shadow:3px 3px 4px 4px rgba(255 ,135 ,85 ,0.4);
+	color: rgba(245, 110, 45, 1);
+	padding: 0px;
+	border: none !important;
+	border-radius: 0px;
+	margin: 5px;
+	height: 180px;
+	width: 24%;
+	overflow: auto;
+	padding: 15px;
+	text-align: center;
+}
+
+/*S Box5 Medium*/
+.Box5 {
+	float: left;
+	background-color: rgba(15, 20, 30, 0.8);
+	box-shadow:3px 3px 4px 4px rgba(255 ,135 ,85 ,0.4);
+	color: rgba(245, 110, 45, 1);
+	padding: 0px;
+	border: none !important;
+	border-radius: 0px;
+	margin: 5px;
+	height: 180px;
+	width: 42%;
+	overflow: auto;
+	padding: 15px;
+	text-align: center;
+}
+
+/*S Box6 Large*/
+.Box6 {
+	float: left;
+	background-color: rgba(15, 20, 30, 0.8);
+	box-shadow:3px 3px 4px 4px rgba(255 ,135 ,85 ,0.4);
+	color: rgba(245, 110, 45, 1);
+	padding: 0px;
+	border: none !important;
+	border-radius: 0px;
+	margin: 5px;
+	height: 180px;
+	width: 92%;
+	overflow: auto;
+	padding: 15px;
+	text-align: center;
+}
