@@ -617,15 +617,6 @@
         font-size: 1.2em;
     }
 
-    .text-center img {
-        filter: grayscale(100%);
-        transition: filter 0.3s ease;
-    }
-
-    .text-center img:hover {
-        filter: grayscale(0%);
-    }
-
     /* ---------- ADDITIONAL AREA ----------*/
     h3 {
         display: none;
@@ -644,52 +635,51 @@
         display: none;
     }
 
-/* ---------- TEMP BIO STUFF ---------- */
-.text-break .bio-columns {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
-}
+    /* ---------- TEMP BIO STUFF ---------- */
+    .text-break .bio-columns {
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+    }
 
-.text-break .bio-col {
-    flex: 1;
-    max-width: 300px;
-    text-align: center;
-}
+    .text-break .bio-col {
+        flex: 1;
+        max-width: 300px;
+        text-align: center;
+    }
 
-.text-break .image-row {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-}
+    .text-break .image-row {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
 
-/* only bio images get grayscale */
-.text-break .image-row img {
-    width: 80px;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
+    .text-break .bio-col img {
+        width: 80px;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+    }
 
-.text-break .image-row img:hover {
-    filter: grayscale(0%);
-}
+    .text-break .bio-col img:hover {
+        filter: grayscale(0%);
+    }
 
-.text-break .image-row a:hover {
-    text-decoration: none !important;
-}
+    .text-break .bio-col a:hover {
+        text-decoration: none !important;
+    }
 
-.text-break .name-bg {
-    position: absolute;
-    top: -110px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    opacity: 0.7;
-    z-index: -1;
-    pointer-events: none;
-}
+    .text-break .name-bg {
+        position: absolute;
+        top: -110px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        opacity: 0.7;
+        z-index: -1;
+        pointer-events: none;
+    }
 
-.text-break {
-    position: relative;
-    padding-top: 20px;
-}
+    .text-break {
+        position: relative;
+        padding-top: 20px;
+    }
