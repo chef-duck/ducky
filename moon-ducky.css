@@ -1,4 +1,4 @@
-    /* ---------- FONTS ---------- */
+       /* ---------- FONTS ---------- */
     @import url("https://use.typekit.net/pqh0pta.css");
     /* Lucida Console */
     @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
@@ -654,17 +654,17 @@
         gap: 5px;
     }
 
-    .text-break .bio-col img {
+    .text-break .image-row img {
         width: 80px;
         filter: grayscale(100%);
         transition: filter 0.3s ease;
     }
 
-    .text-break .bio-col img:hover {
+    .text-break .image-row img:hover {
         filter: grayscale(0%);
     }
 
-    .text-break .bio-col a:hover {
+    .text-break .image-row a:hover {
         text-decoration: none !important;
     }
 
