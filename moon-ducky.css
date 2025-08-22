@@ -262,7 +262,7 @@
     }
 
     th.pt-1.pb-1::before {
-        content: "Rizzler";
+        content: "Alpha";
         font-size: 40px !important;
         padding: 10px;
     }
@@ -273,7 +273,7 @@
     }
 
     .featured-wolf::before {
-        content: "Rizzler";
+        content: "Omega";
         font-size: .875rem !important;
         font-style: italic;
     }
