@@ -626,15 +626,6 @@
         display: none;
     }
 
-    /* HIDDEN CAVE */
-    /* [data-cave-key="cave-187124"] {display:none;} */
-    [data-cave-key="cave-0"] {
-        display: none;
-    }
-    [data-cave-key="cave-176761"] {
-        display: none;
-    }
-
     /* ---------- TEMP BIO STUFF ---------- */
     .text-break .bio-columns {
         display: flex;
