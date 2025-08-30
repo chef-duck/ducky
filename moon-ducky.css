@@ -1,11 +1,10 @@
-       /* ---------- FONTS ---------- */
-    @import url("https://use.typekit.net/pqh0pta.css");
-    /* Lucida Console */
-    @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
-    /* Nanum Brush Script */
-    @import url("https://use.typekit.net/pqh0pta.css");
-    /* Lucida Sans */
-    /* ---------- IMPORTANT ---------- */
+@import url("https://use.typekit.net/pqh0pta.css");
+/* Lucida Console */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+/* Nanum Brush Script */
+@import url("https://use.typekit.net/pqh0pta.css");
+/* Lucida Sans */
+/* ---------- IMPORTANT ---------- */
     #footer {
         background: none;
         font-size: 80%;
@@ -165,7 +164,7 @@
             background: none;
         }
 
-        /* ---------- PACK TITLE ---------- */
+/* ---------- PACK TITLE ---------- */
         #main > h1 {
             color: white;
             text-align: center !important;
@@ -176,7 +175,7 @@
             opacity: 0.8;
         }
 
-        /* ---------- BIO CONTENT ---------- */
+/* ---------- BIO CONTENT ---------- */
         .pack {
             color: white;
             text-align: center !important;
@@ -192,7 +191,7 @@
             text-decoration: none !important;
         }
 
-        /* ---------- HEADER CHANGES ---------- */
+/* ---------- HEADER CHANGES ---------- */
         #header .navbar-main .nav-link {
             font-size: 9px;
             letter-spacing: 1px;
@@ -214,7 +213,7 @@
         color: inherit;
     }
 
-    /* ---------- BODY (FONT, BACKGROUND, CURSOR) ---------- */
+/* ---------- BODY (FONT, BACKGROUND, CURSOR) ---------- */
     body {
         color: #999;
         font-family: 'Lucida Console';
@@ -230,7 +229,7 @@
         cursor: url(https://images2.imgbox.com/31/12/thqAieuF_o.png), progress !important;
     }
 
-    /* ---------- LINKS ---------- */
+/* ---------- LINKS ---------- */
     a,
     .table th a,
     .alert-info .alert-link,
@@ -250,7 +249,7 @@
         color: #fff;
     }
 
-    /* ---------- FEATURED WOLF DISPLAY, LEAD TITLE ---------- */
+/* ---------- FEATURED WOLF DISPLAY, LEAD TITLE ---------- */
     .pt-1.pb-1,
     .featured-wolf b {
         line-height: 1;
@@ -292,7 +291,7 @@
         border-radius: 5px;
     }
 
-    /* ---------- LEAD WOLF ---------- */
+/* ---------- LEAD WOLF ---------- */
     .form-row .card,
     td.right.text-right,
     .pb-1,
@@ -305,7 +304,7 @@
         background-blend-mode: darken;
     }
 
-    /* ---------- PACK INFO ---------- */
+/* ---------- PACK INFO ---------- */
     .form-row .card-header b {
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -326,7 +325,7 @@
         margin-bottom: 10px;
     }
 
-    /* ---------- WOLF CARDS ---------- */
+/* ---------- WOLF CARDS ---------- */
     .table-striped tbody tr:nth-of-type(odd),
     .form-control {
         background-color: transparent;
@@ -385,7 +384,7 @@
         font-size: 2rem;
     }
 
-    /* ---------- CONTENT (BACKGROUND COLOR, BORDERS, DEN UPDATE BAR, DEN PAGE EDITOR) ---------- */
+/* ---------- CONTENT (BACKGROUND COLOR, BORDERS, DEN UPDATE BAR, DEN PAGE EDITOR) ---------- */
     #main {
         background: #000000c4;
         border: 0px solid #eee3;
@@ -399,10 +398,10 @@
         border: 0px solid #eee3;
     }
 
-    tr {
-        border-top: 1px solid #2f2f2f;
+    .table {
+        border: none;
     }
-
+    
     .table .bottom,
     .table tfoot td {
         color: inherit;
@@ -413,7 +412,7 @@
         filter: invert(1);
     }
 
-    /* ---------- DEN TITLES ---------- */
+/* ---------- DEN TITLES ---------- */
     th.top {
         padding: 15px 25px;
         background-image: url(https://images.unsplash.com/photo-1675351829536-3802569e47b2?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) !important;
@@ -425,13 +424,13 @@
         text-shadow: 0 0 10px #000000c7;
     }
 
-    /* ---------- ICONS ---------- */
+/* ---------- ICONS ---------- */
     .fas {
         color: #999;
         font-size: 10px;
     }
 
-    /* ---------- FONTS ---------- */
+/* ---------- FONTS ---------- */
     th,
     .table a,
     #footer nav .nav-item .nav-link {
@@ -468,7 +467,7 @@
         font-size: inherit !important;
     }
 
-    /* ---------- ALERTS ---------- */
+/* ---------- ALERTS ---------- */
     #summernote-form,
     .alert {
         background: none;
@@ -549,7 +548,7 @@
         text-align: right !important;
     }
 
-    /* ---------- TITLE CARDS ---------- */
+/* ---------- TITLE CARDS ---------- */
     .table th {
         background-image: url(https://images.unsplash.com/photo-1675351829536-3802569e47b2?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) !important;
         background-color: #011017;
@@ -557,7 +556,7 @@
         background-attachment: fixed;
     }
 
-    /* ---------- PROFILE STUFF ---------- */
+/* ---------- PROFILE STUFF ---------- */
     .justify-content-md-center {
         display: none;
     }
@@ -582,7 +581,7 @@
         padding: 0px;
     }
 
-    /* ---------- BIO BOX ---------- */
+/* ---------- BIO BOX ---------- */
     pre {
         font-size: 0.7rem;
         margin-left: 0;
@@ -617,7 +616,7 @@
         font-size: 1.2em;
     }
 
-    /* ---------- ADDITIONAL AREA ----------*/
+/* ---------- ADDITIONAL AREA ----------*/
     h3 {
         display: none;
     }
@@ -626,7 +625,7 @@
         display: none;
     }
 
-    /* ---------- TEMP BIO STUFF ---------- */
+/* ---------- TEMP BIO STUFF ---------- */
     .text-break .bio-columns {
         display: flex;
         justify-content: center;
@@ -674,3 +673,4 @@
         position: relative;
         padding-top: 20px;
     }
+    
