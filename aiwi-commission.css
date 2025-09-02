@@ -7,6 +7,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+/* ---------- CURSOR ---------- */
+
+* {
+    cursor: url('https://images2.imgbox.com/0f/60/yeP3Yvnf_o.png');
+} 
+
 /* ---------- BACKGROUND ---------- */
 body {
     background-image: linear-gradient(rgba(91, 94, 115, .1), rgba(67, 63, 78, .7)), url('https://images2.imgbox.com/01/e6/6ZoD0sFP_o.jpg');
@@ -534,4 +540,5 @@ span.copyright {
     background-image: url("https://files.catbox.moe/gi734r.webp");
     opacity: 0.3;
 }
+
 
