@@ -677,18 +677,18 @@
 
     /* --------- PAGEDOLL ---------- */
     @media (max-width: 1024px) {
-        .pagedoll {
+        #fraDenHTML .pagedoll {
             display: none;
         }
     }
 
     @media (max-width: 768px) {
-        .pagedoll {
+        #fraDenHTML .pagedoll {
             display: none;
         }
     }
 
-    .pagedoll-container {
+    #fraDenHTML .pagedoll-container {
         position: fixed;
         top: 50%;
         left: 5%;
@@ -699,7 +699,7 @@
         z-index: 9999;
     }
 
-    .pagedoll {
+    #fraDenHTML .pagedoll {
         width: 150px;
         height: 150px;
         object-fit: contain;
@@ -707,15 +707,15 @@
         transition: transform 0.3s ease, filter 0.5s ease;
     }
 
-    .pagedoll-container a:nth-child(1) .pagedoll {
+    #fraDenHTML .pagedoll-container a:nth-child(1) .pagedoll {
         animation: float1 4s ease-in-out infinite;
         animation-delay: 0s;
     }
-    .pagedoll-container a:nth-child(2) .pagedoll {
+    #fraDenHTML .pagedoll-container a:nth-child(2) .pagedoll {
         animation: float2 4s ease-in-out infinite;
         animation-delay: 1s;
     }
-    .pagedoll-container a:nth-child(3) .pagedoll {
+    #fraDenHTML .pagedoll-container a:nth-child(3) .pagedoll {
         animation: float3 4s ease-in-out infinite;
         animation-delay: 2s;
     }
@@ -750,6 +750,6 @@
         }
     }
 
-    .pagedoll:hover {
+    #fraDenHTML .pagedoll:hover {
         filter: grayscale(0%);
     }
