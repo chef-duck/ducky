@@ -1,0 +1,702 @@
+                @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap');
+                @import url('https://use.typekit.net/pqh0pta.css');
+                @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+
+                /* ==== BASE ==== */
+                html,
+                body {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    overflow-x: hidden;
+                }
+
+                body {
+                    font-family: "Noto Serif JP" !important;
+                    font-weight: 200 !important;
+                    font-size: 11px !important;
+                    line-height: 1.5 !important;
+                    position: relative !important;
+                }
+
+                * {
+                    color: #fff;
+                }
+
+                a {
+                    color: #fff !important;
+                    font-weight: bold;
+                    transition: .5s;
+                }
+
+                small {
+                    font-size: 11px !important;
+                }
+
+                a:hover {
+                    text-decoration: line-through !important;
+                }
+
+                body {
+                    background-image: url('') !important;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                /* ==== LAYOUT ==== */
+                #sidebar {
+                    display: block !important;
+                    position: absolute !important;
+                    padding: 10px !important;
+                    z-index: 1 !important;
+                }
+
+                @media (min-width: 992px) {
+
+                    #sidebar {
+                        left: calc(12px - ((100vw - 1160px)/2) + 45px) !important;
+                        top: 20px !important;
+                        width: 250px !important;
+                        background: none !important;
+                    }
+
+                    #main.col-lg-9 {
+                        max-width: 100% !important;
+                        flex: 1 !important;
+                    }
+
+                    #main {
+                        border: 0 !important;
+                        padding: 0 !important;
+                        position: relative !important;
+                        background: none !important;
+                    }
+
+                    .container {
+                        position: relative !important;
+                    }
+
+                    .container > div {
+                        background: transparent !important;
+                        border: 0 !important;
+                        padding: 5px !important;
+                    }
+                }
+
+                /* ==== SIDEBAR ==== */
+                @media (min-width: 992px) {
+                    #sidebar * {
+                        color: #fff !important;
+                    }
+
+                    #sidebar .card {
+                        background: transparent !important;
+                        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+                        border-radius: 5px !important;
+                        margin-bottom: 12px !important;
+                        overflow: visible !important;
+                        height: auto !important;
+                    }
+
+                    /* Card headers */
+                    #sidebar .card .h4,
+                    #sidebar .card h4 {
+                        background: transparent !important;
+                        color: #fff !important;
+                        border-radius: 5px !important;
+                        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+                        padding: 5px !important;
+                        font-size: 14px !important;
+                        font-weight: bold !important;
+                        text-align: center !important;
+                        margin: 5px !important;
+                    }
+
+                    #sidebar #card-user h3 {
+                        background: transparent !important;
+                        color: #fff !important;
+                        border-radius: 5px !important;
+                        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+                        padding: 6px !important;
+                        font-size: 14px !important;
+                        font-weight: bold !important;
+                        text-align: center !important;
+                        margin: 5px !important;
+                    }
+
+                    #sidebar #card-user h3 a {
+                        color: #fff !important;
+                        font-weight: bold !important;
+                    }
+
+                    #card-user > .card-body > h3.mb-3 {
+                        display: none !important;
+                    }
+
+                    .d-flex {
+                        flex-direction: column !important;
+                        align-items: center !important;
+                    }
+
+                    .d-flex.justify-content-between.mt-1.small {
+                        flex-direction: row !important;
+                        line-height: 2 !important;
+                    }
+
+                    /* Wolf icon in sidebar */
+                    .w-50 > a img {
+                        display: none !important;
+                    }
+
+                    /* Featured wolf icon in sidebar - hide */
+                    .w-50 div a img {
+                        display: none !important;
+                        border: none !important;
+                    }
+
+                    .w-50 div[style] {
+                        border: none !important;
+                        border-color: transparent !important;
+                    }
+
+
+                    /* Multi-column cards (quests, bookmarks, etc) */
+                    #sidebar .multi-column.no-gutters .card {
+                        background: transparent !important;
+                        overflow: visible !important;
+                        height: auto !important;
+                    }
+
+                    /* Scrollbar for sidebar if content is too long */
+                    #sidebar::-webkit-scrollbar {
+                        width: 5px;
+                    }
+
+                    #sidebar::-webkit-scrollbar-thumb {
+                        background: rgba(255, 255, 255, 0.3);
+                        border-radius: 5px;
+                    }
+
+                    /* Make sure all text in sidebar is visible */
+                    #sidebar .card-body,
+                    #sidebar .card-header,
+                    #sidebar p,
+                    #sidebar span,
+                    #sidebar div {
+                        color: #fff !important;
+                    }
+                }
+
+                /* ==== DEN + PROFILE TABS (TOP LEFT) ==== */
+                body #main > .nav-tabs {
+                    position: absolute !important;
+                    top: 34px !important;
+                    margin: 0 !important;
+                    z-index: 1 !important;
+                    border: 0 !important;
+                    display: flex !important;
+                    justify-content: flex-start !important;
+                    align-items: center !important;
+                    gap: 10px !important;
+                }
+
+                #main > .alert:first-of-type {
+                    margin-top: 28px !important;
+                }
+
+                #main > h1 {
+                    display: none !important;
+                }
+
+                body #main > .nav-tabs .nav-link i,
+                body #main > .nav-tabs .nav-link .fa {
+                    font-size: 14px !important;
+                }
+
+                body #main > .nav-tabs .nav-link.active {
+                    color: #fff !important;
+                    border-bottom: 2px solid #fff !important;
+                }
+
+                i.fas.fa-home.mr-2::before {
+                    content: "\f520";
+                    font-family: "Font Awesome 5 Free";
+                    color: #fff;
+                    text-align: center !important;
+                }
+
+                .fa-user:before {
+                    content: "\f4ba";
+                    font-family: "Font Awesome 5 Free";
+                    color: #fff;
+                    text-align: center !important;
+                }
+
+                /* ==== RIGHT STACK ==== */
+                @media (min-width: 992px) {
+                    table.table.table-striped.border-none.mt-3.mb-0 {
+                        background: transparent !important;
+                        border: 0 !important;
+                        margin: 0 !important;
+                        height: 0 !important;
+                        overflow: visible !important;
+                    }
+
+                    /* ===== LEAD WOLF TITLE (RIGHT SIDE, TOP) ===== */
+                    table.table.table-striped.border-none.mt-3.mb-0 th.pt-1.pb-1 {
+                        position: absolute !important;
+                        right: calc(12px - ((100vw - 1160px)/2) + 65px) !important;
+                        top: 6px !important;
+                        width: 200px !important;
+                        z-index: 1 !important;
+                        background: transparent !important;
+                        border: 0 !important;
+                        padding: 0 !important;
+                        margin: 0 !important;
+                        font-size: 12px !important;
+                        letter-spacing: 0 !important;
+                        text-transform: none !important;
+                        line-height: 20px !important;
+                        text-align: right !important;
+                        white-space: nowrap !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 th.pt-1.pb-1 #lblPackLeaderTitle {
+                        font-style: italic !important;
+                        font-weight: 400 !important;
+                        text-transform: none !important;
+                        color: #fff !important;
+                        margin-right: 6px !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 th.pt-1.pb-1 a {
+                        font-style: normal !important;
+                        font-weight: 700 !important;
+                        text-transform: none !important;
+                        color: #fff !important;
+                    }
+
+                    /* ===== LEAD WOLF IMAGE (RIGHT SIDE) ===== */
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-3.col-sm-7.text-center {
+                        position: absolute !important;
+                        right: calc(12px - ((100vw - 1160px)/2) + 65px) !important;
+                        top: 30px !important;
+                        width: 200px !important;
+                        z-index: 0 !important;
+                        padding: 0 !important;
+                        margin: 0 !important;
+                        text-align: right !important;
+                        box-sizing: border-box !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-3.col-sm-7.text-center .card {
+                        background: transparent !important;
+                        border: 0 !important;
+                        border-radius: 0 !important;
+                        padding: 0 !important;
+                        box-shadow: none !important;
+                        margin: 0 !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-3.col-sm-7.text-center .card-body {
+                        display: none !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-3.col-sm-7.text-center img {
+                        display: block !important;
+                        width: 200px !important;
+                        height: 200px !important;
+                        object-fit: contain !important;
+                        margin: 0 auto !important;
+                        box-sizing: border-box !important;
+                    }
+
+                    /* ===== PACK STATS BOX (RIGHT SIDE, UNDER LEAD WOLF) ===== */
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-6.col-sm-12.order-xl-9.order-12 {
+                        position: absolute !important;
+                        right: calc(12px - ((100vw - 1160px)/2) + 65px) !important;
+                        top: 235px !important;
+                        width: 200px !important;
+                        z-index: 0 !important;
+                        background: transparent !important;
+                        border: 0 !important;
+                        padding: 10px 12px !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-6.col-sm-12.order-xl-9.order-12 table {
+                        width: 100% !important;
+                        border: 0 !important;
+                        background: transparent !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-6.col-sm-12.order-xl-9.order-12 table.striped tbody tr:nth-of-type(odd) {
+                        background: transparent !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-6.col-sm-12.order-xl-9.order-12 table tr {
+                        display: flex !important;
+                        align-items: baseline !important;
+                        gap: 10px !important;
+                        border: 0 !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-6.col-sm-12.order-xl-9.order-12 table td {
+                        border: 0 !important;
+                        background: transparent !important;
+                        padding: 4px 0 !important;
+                        min-width: 0 !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-6.col-sm-12.order-xl-9.order-12 table td.b {
+                        flex: 1 1 auto !important;
+                        display: flex !important;
+                        align-items: baseline !important;
+                        gap: 10px !important;
+                        font-style: normal !important;
+                        font-weight: 400 !important;
+                        color: #fff !important;
+                        text-transform: none !important;
+                        white-space: nowrap !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-6.col-sm-12.order-xl-9.order-12 table td.b::after {
+                        content: "" !important;
+                        flex: 1 1 auto !important;
+                        border-bottom: 1px dashed rgba(255, 255, 255, 0.3) !important;
+                        transform: translateY(-2px) !important;
+                        min-width: 26px !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-6.col-sm-12.order-xl-9.order-12 table td:not(.b) {
+                        flex: 0 1 auto !important;
+                        max-width: 62% !important;
+                        text-align: right !important;
+                        font-weight: 700 !important;
+                        color: #fff !important;
+                        white-space: normal !important;
+                        overflow-wrap: anywhere !important;
+                        word-break: break-word !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .col-xl-6.col-sm-12.order-xl-9.order-12 table td:not(.b) .floatright {
+                        float: none !important;
+                        display: inline-flex !important;
+                        margin-left: 6px !important;
+                        vertical-align: baseline !important;
+                    }
+
+                    /* ===== FEATURED WOLF IMAGE (RIGHT SIDE, BIGGER GAP FROM PACK STATS) ===== */
+                    table.table.table-striped.border-none.mt-3.mb-0 .featured-wolf {
+                        position: absolute !important;
+                        right: calc(12px - ((100vw - 1160px)/2) + 65px) !important;
+                        top: 460px !important;
+                        width: 200px !important;
+                        height: 200px !important;
+                        overflow: visible !important;
+                        z-index: 0 !important;
+                        padding: 0 !important;
+                        margin: 0 !important;
+                        background: transparent !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .featured-wolf img {
+                        display: block !important;
+                        width: 100% !important;
+                        height: 100% !important;
+                        object-fit: cover !important;
+                        background: transparent !important;
+                        margin: 0 !important;
+                        box-sizing: border-box !important;
+                    }
+
+                    /* ===== FEATURED WOLF TITLE ===== */
+                    table.table.table-striped.border-none.mt-3.mb-0 .featured-wolf #lblFeaturedWolfTitle {
+                        position: absolute !important;
+                        right: 0 !important;
+                        top: -24px !important;
+                        width: 100% !important;
+                        z-index: 1 !important;
+                        font-style: italic !important;
+                        font-weight: 400 !important;
+                        text-transform: none !important;
+                        color: #fff !important;
+                        letter-spacing: 0 !important;
+                        line-height: 20px !important;
+                        text-align: right !important;
+                        white-space: nowrap !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .featured-wolf #lblFeaturedWolfTitle + br {
+                        display: none !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .featured-wolf a[href^="/wolf/"]:not(:has(img)) {
+                        position: absolute !important;
+                        right: 0 !important;
+                        top: -24px !important;
+                        width: 100% !important;
+                        z-index: 1 !important;
+                        font-style: normal !important;
+                        font-weight: 700 !important;
+                        text-transform: none !important;
+                        color: #fff !important;
+                        letter-spacing: 0 !important;
+                        line-height: 20px !important;
+                        text-align: right !important;
+                        white-space: nowrap !important;
+                    }
+
+                    /* ===== FEATURED WOLF REMOVE BUTTON ===== */
+                    table.table.table-striped.border-none.mt-3.mb-0 .featured-wolf form {
+                        display: none !important;
+                    }
+
+                    table.table.table-striped.border-none.mt-3.mb-0 .featured-wolf form br {
+                        display: none !important;
+                    }
+                }
+
+                /* ==== RIGHT STACK 2 ==== */
+                #denCards {
+                    gap: 25px !important;
+                }
+
+                #denCards > div {
+                    flex: 0 0 100% !important;
+                    max-width: 100% !important;
+                }
+
+                #denCards .card {
+                    background: transparent !important;
+                    border-radius: 0px !important;
+                    top: -49px !important;
+                }
+
+                #denCards .card-img-top,
+                #denCards img.card-img-top {
+                    display: none !important;
+                }
+
+                #denCards .card-header {
+                    background: black !important;
+                    border-radius: 0 !important;
+                    border: 0 !important;
+                    padding: 10px 12px !important;
+                }
+
+                #denCards .card-header b {
+                    font-size: 11px !important;
+                    letter-spacing: 1px !important;
+                    text-transform: uppercase !important;
+                    color: #fff !important;
+                }
+
+                @media (min-width: 992px) {
+                    #denCards {
+                        position: absolute !important;
+                        right: calc(12px - ((100vw - 1160px)/2) + 65px) !important;
+                        top: 750px !important;
+                        width: 200px !important;
+                        z-index: 1 !important;
+                        display: flex !important;
+                        flex-direction: column !important;
+                        margin: 0 !important;
+                        padding-left: 0 !important;
+                        padding-right: 0 !important;
+                        box-sizing: border-box !important;
+                    }
+
+                    #denCards > div {
+                        padding-left: 0 !important;
+                        padding-right: 0 !important;
+                    }
+                }
+
+                /* ==== NAVBAR ==== */
+                #header::before,
+                #header .breadcrumb-nav {
+                    display: none !important;
+                }
+
+                #header .navbar-main {
+                    width: 100vw !important;
+                    margin-left: calc(50% - 50vw) !important;
+                    margin-right: calc(50% - 50vw) !important;
+                    border-radius: 0 !important;
+                }
+
+                #header .navbar-main .nav-link,
+                #header .navbar-main .nav-link .fa,
+                #header .navbar-main .nav-link i {
+                    color: #fff !important;
+                    font-weight: 700 !important;
+                    letter-spacing: 0.8px !important;
+                    text-transform: uppercase !important;
+                    font-size: 16px !important;
+                }
+
+                #header .navbar-main .nav-link:hover {
+                    opacity: 0.85;
+                }
+
+                #header .navbar-status {
+                    width: 100vw !important;
+                    margin-left: calc(50% - 50vw) !important;
+                    margin-right: calc(50% - 50vw) !important;
+                    border-radius: 0 !important;
+                }
+
+                #header .navbar-status,
+                #header .navbar-status a {
+                    color: #fff !important;
+                    font-weight: 700 !important;
+                }
+
+                #header .navbar-status a:hover {
+                    text-decoration: underline !important;
+                }
+
+                #header .navbar-status span.navbar-text {
+                    font-style: italic !important;
+                    font-weight: 400 !important;
+                    text-transform: lowercase !important;
+                }
+
+                #header .text-light {
+                    font-size: 13px !important;
+                }
+
+                @media (max-width: 991px) {
+                    #sidebar {
+                        display: block !important;
+                        position: relative !important;
+                    }
+                }
+
+                /* ==== NOTIFS ==== */
+                .alert,
+                .alert-info,
+                .alert-success,
+                .alert-danger {
+                    color: #a3a3a3!important;
+                }
+
+                #main > .alert {
+                    background: transparent!important;
+                    border: 0!important;
+                    box-shadow: none!important;
+                    border-radius: 0!important;
+                    padding: 0!important;
+                    margin: 6px auto 0 auto!important;
+                    max-width: 100%!important;
+                    width: 100%!important;
+                    display: flex!important;
+                    justify-content: flex-end!important;
+                    align-items: center!important;
+                    gap: 10px!important;
+                    text-align: right!important;
+                    line-height: 1.25!important;
+                    font-style: italic!important;
+                    text-transform: lowercase!important;
+                    font-weight: 400!important;
+                }
+
+                #main > .alert-danger {
+                    padding: 0 !important;
+                    gap: 5px !important;
+                }
+
+                #main > .alert:first-child {
+                    margin-top: 0!important;
+                }
+
+                #main > .alert hr,
+                .alert .close {
+                    display: none!important;
+                }
+
+                /* === TABLE STUFF === */
+                table.table[data-cave-key] tbody {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                
+                table.table[data-cave-key] tbody > tr {
+                    align-items: center !important;
+                }
+
+                table.table[data-cave-key] tbody > tr.font-weight-bold,
+                table.table[data-cave-key] tbody > tr:last-child {
+                    grid-column: 1 / -1;
+                }
+
+                table.table[data-cave-key] tbody > tr.font-weight-bold {
+                    display: none !important;
+                }
+
+                table.table[data-cave-key] tbody > tr:not(.font-weight-bold):not(:last-child) {
+                    display: grid;
+                    grid-template-columns: 100px 1fr auto auto;
+                    grid-template-areas: "img name stats stats" "img info currents currents";
+                    gap: 6px 10px;
+
+                    background: rgba(0, 0, 0, 0.04);
+                    border-radius: 0px;
+                    padding: 5px;
+                }
+
+                table.table[data-cave-key] td.text-right {
+                    display: flex;
+                    position: relative;
+                    flex-direction: row;
+                    top: -16px !important;
+                    align-self: start;
+                    justify-content: center;
+                    gap: 10px;
+                }
+
+                table.table[data-cave-key] td.text-right img {
+                    width: 15px !important;
+                    height: 15px !important;
+                    margin: 0px !important;
+                }
+
+                table.table[data-cave-key] tbody > tr td:nth-child(1) {
+                    grid-area: img;
+                }
+
+                table.table[data-cave-key] tbody > tr td:nth-child(2) {
+                    grid-area: name;
+                }
+
+                table.table[data-cave-key] tbody > tr td:nth-child(3) {
+                    grid-area: stats;
+                }
+
+                table.table[data-cave-key] tbody > tr td:nth-child(4) {
+                    grid-area: info;
+                }
+
+                table.table[data-cave-key] tbody > tr td:nth-child(5),
+                table.table[data-cave-key] tbody > tr td:nth-child(6) {
+                    grid-area: currents;
+                }
+
+                table.table[data-cave-key] tbody > tr:not(.font-weight-bold):not(:last-child) {
+                    font-size: 13px;
+                    line-height: 1.2;
+                }
+
+                table.table[data-cave-key] td:nth-child(4) {
+                    white-space: nowrap;
+                    text-align: right;
+                }
+
+                table.table[data-cave-key] img {
+                    max-width: 100px !important;
+                }
+
+                table.table[data-cave-key] td {
+                    border: none;
+                    padding: 0;
+                }
