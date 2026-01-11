@@ -951,6 +951,27 @@
                         background: none !Important;
                     }
 
+                    .s-chat-sidebar #label_currentChannel {
+                        color: white !important;
+                        background-color: transparent !important;
+                        border: none !important;
+                    }
+
+                    .s-chat-sidebar #fraChatChannelMenu,
+                    #fra_chatContainer .channelMenu .channelSwitcher {
+                        background-color: #222 !important;
+                        border: none !important;
+                    }
+                    div#chatMessageContainer.chatContainer {
+                        border: none !important;
+                    }
+
+                    .s-chat-sidebar #chatMessagePinned.s-chat-message__pinned,
+                    #chatMessagePinned.s-chat-message__pinned .s-chat-message_content {
+                        background-color: #d7d7d7 !important;
+                        border: none !important;
+                    }
+
                     #txtDenHTML.form-control {
                         background: none !important;
                     }
@@ -963,7 +984,7 @@
                         border: none !important;
                         color: #252525 !important;
                     }
-  
+
                     ::-webkit-scrollbar {
                         width: 6px;
                     }
