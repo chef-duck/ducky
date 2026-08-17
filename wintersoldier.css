@@ -90,6 +90,13 @@ a:hover {
 	color: #e1e2e6;
 	transition: color 1s ease;
 }
+	
+	@media(max-width: 768px) {
+	#header .navbar-main .nav-link {
+		font-size: 50px;
+		height: 75px;
+	}
+}
 
 #header .navbar-main .nav-link:hover {
 	color: #505154 !important;
@@ -248,7 +255,7 @@ i.fas.fa-home.mr-2::before {
 }
 
 .alert-danger a {
-	color: #f7faf0 !important;
+	color: #eceaf1 !important;
 }
 
 .alert-info {
@@ -786,7 +793,7 @@ textarea#txtDenHTML.form-control {
 	background-color: #2c2b31;
 	border: none;
 	border-radius: 100px;
-	color: #28292d;
+	color: #eef0f5;
 }
 
 .btn-warning:hover {
@@ -804,6 +811,11 @@ div.alert.alert-warning{
 }
 
 /* PROFILE */
+	
+div.card.m-0 {
+	background-color: #8d8e9c94 !important;
+}
+	
 h1.mb-1 {
 	font-size: 100px;
 }
