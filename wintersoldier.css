@@ -648,7 +648,11 @@ td.p-0 img.border-bottom {
 
 td.p-0 img.border-bottom.p-2 {
 	padding: 0px !important;
+    margin-left: 9px;
+    margin-top: 6px;
 	border: solid 2px #7a0000 !important;
+	width: 80% !important; 
+	object-fit: contain !important;
 }
 
 .bg-warning {
