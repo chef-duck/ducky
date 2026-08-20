@@ -937,3 +937,218 @@ button.btn.btn-warning.btn-spoiler.active {
 	background-color: #51535e;
 	border-radius: 5px;
 }
+/* ===== BUCKY HTML ===== */
+.bucky-wrapper {
+    max-width: 950px !important;
+    margin: 30px auto !important;
+    padding: 0 15px !important;
+    display: flex !important;
+    align-items: stretch !important;
+}
+
+.bucky-main-col {
+    flex: 2 1 0 !important;
+    min-width: 0 !important;
+    padding: 30px !important;
+}
+
+.bucky-vertical-divider {
+    width: 2px !important;
+    background: #7a0000 !important;
+    margin-top: 70px !important;;
+    margin-bottom: 30px !important;
+    flex-shrink: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .bucky-vertical-divider {
+        display: none !important;
+    }
+}    
+    
+.bucky-side-col {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    align-items: center !important;
+}
+
+.bucky-side-col img {
+    max-width: 70% !important;
+    height: auto !important;
+    padding: 0 !important;
+}
+
+.bucky-title {
+    font-size: 50px !important;
+    text-align: left !important;
+    color: #e4e3e8 !important;
+    text-shadow: 0px 0px 10px #3b3b47 !important;
+    margin: 0px !important;
+    padding: 0 !important;
+}
+
+.bucky-about-box {
+    border: 2px solid #6a6a72 !important;
+    border-radius: 2px !important;
+    background: rgba(45, 45, 50, 0.55) !important;
+    padding: 26px 30px !important;
+    margin-bottom: 5px !important;
+}
+
+.bucky-about-title {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    color: #e4e3e8 !important;
+    text-shadow: 0px 0px 10px #3b3b47 !important;
+    margin: 0 0 15px 0 !important;
+}
+
+.bucky-about-box p {
+    color: #e4e3e8 !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    margin: 0 !important;
+}
+
+.bucky-lore-section {
+    padding: 0 5px !important;
+    margin: -30px 0px !important;
+}
+
+.bucky-lore-section p {
+    color: #e4e3e8 !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    margin: 0 !important;
+}
+
+hr {
+    border: none !important;
+    border-top: 2px solid #7a0000 !important;
+    margin: 5px !important;
+}
+
+.bucky-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) !important;
+    gap: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    font-size: 0 !important;
+    padding: 10px !important;
+}
+
+.bucky-grid a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    min-height: 48px !important;
+    width: 100% !important;
+    max-width: none !important;
+    flex: none !important;
+    box-sizing: border-box !important;
+    padding: 10px 8px !important;
+    background: rgba(45, 45, 50, 0.55) !important;
+    border: none !important;
+    border-radius: 2px !important;
+    color: #e4e3e8 !important;
+    text-decoration: none !important;
+    font-size: 13px !important;
+    position: relative !important;
+}
+
+.bucky-grid a::after,
+.bucky-grid a::before {
+    content: '' !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 3px !important;
+    background: linear-gradient(to right, #7a0000, #7a0000) !important;
+    bottom: -5px !important;
+    left: 0 !important;
+    transform: scaleX(0) !important;
+    transform-origin: right !important;
+    transition: transform 0.4s ease-out !important;
+}
+
+.bucky-grid a::before {
+    top: -5px !important;
+    bottom: auto !important;
+    transform-origin: left !important;
+}
+
+.bucky-grid a:hover::after,
+.bucky-grid a:hover::before {
+    transform: scaleX(1) !important;
+}
+
+.bucky-grid a:hover {
+    color: #f0f0f4 !important;
+}
+
+@media (max-width: 768px) {
+    .bucky-wrapper {
+        flex-direction: column !important;
+    }
+
+    .bucky-side-col {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    .bucky-side-col img {
+        max-width: 45% !important;
+    }
+
+    .bucky-title {
+        font-size: 34px !important;
+    }
+
+    .bucky-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 10px !important;
+    }
+
+    .bucky-grid a {
+        padding: 10px 6px !important;
+        font-size: 12px !important;
+    }
+} 
+    /*-- 
+
+<!-- BUCKY TEMPLATE -->
+<div class="bucky-wrapper"><div class="bucky-main-col">
+        <h1 class="bucky-title">About Me</h1>
+
+        <!-- ABOUT ME -->
+        <div class="bucky-about-box"><p>words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that words and stuff like that</p></div>
+
+        <hr>
+
+        <!-- LORE -->
+        <div class="bucky-lore-section">
+            <p class="text-justify">Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff</p>
+            <p class="text-justify">Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff Blah blah blah words and stuff</p>
+        </div>
+
+        <hr>
+
+        <!-- LINK BUTTON 3 COLUMN GRID -->
+        <!-- IMPORTANT: Keep all <a> tags tight together with NO spaces, tabs, or line breaks between them! -->
+        <div class="bucky-grid"><a href="https://www.wolvden.com/">Link 1</a><a href="https://www.wolvden.com/">Link 2</a><a href="https://www.wolvden.com/">Link 3</a><a href="https://www.wolvden.com/">Link 4</a><a href="https://www.wolvden.com/">Link 5</a><a href="https://www.wolvden.com/">Link 6</a><a href="https://www.wolvden.com/">Link 7</a><a href="https://www.wolvden.com/">Link 8</a><a href="https://www.wolvden.com/">Link 9</a></div>
+    </div> <div class="bucky-vertical-divider"></div><div class="bucky-side-col">
+        <img src="https://static.wolvden.com/images/games/fishing/fish/bull-shark.png">
+        <img src="https://static.wolvden.com/images/games/fishing/fish/white-sturgeon.png">
+        <img src="https://static.wolvden.com/images/games/fishing/fish/seal-pup.png">
+        <img src="https://static.wolvden.com/images/games/fishing/fish/baby-alligator.png">
+    </div>
+
+</div>
+
+    --*/
