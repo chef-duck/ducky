@@ -1,4 +1,4 @@
-.screen, .screen * {
+    .screen, .screen * {
         box-sizing: border-box !important;
     }
 
